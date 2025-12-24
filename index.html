@@ -5,176 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>高雄在地美食饗宴 Top 5</title>
     <style>
-        /* 基礎頁面設定 */
-        body {
-            font-family: "Microsoft JhengHei", "微軟正黑體", Arial, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* 主要內容容器 */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        /* 主標題樣式 */
-        h1 {
-            text-align: center;
-            color: #d35400;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #d35400;
-        }
-
-        /* 每一道美食的區塊 */
-        .food-item {
-            margin-bottom: 50px;
-            border-bottom: 1px dashed #ccc;
-            padding-bottom: 30px;
-        }
-
-        .food-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .food-title {
-            color: #0056b3;
-            font-size: 1.8em;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .sub-heading {
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #e67e22;
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-
-        p {
-            margin-top: 0;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        /* 圖片樣式 */
-        .food-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        }
-
-        .visual-impression p {
-            font-style: italic;
-            color: #555;
-            background-color: #fff3e0;
-            padding: 15px;
-            border-left: 4px solid #e67e22;
-            border-radius: 4px;
-        }
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; line-height: 1.7; color: #333; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background-color: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #d35400; font-size: 2.5em; margin-bottom: 40px; border-bottom: 3px solid #d35400; }
+        .food-item { margin-bottom: 50px; border-bottom: 1px dashed #ccc; padding-bottom: 30px; }
+        .food-title { color: #0056b3; font-size: 1.8em; text-decoration: none; }
+        .food-title:hover { color: #e67e22; }
+        .sub-heading { font-size: 1.2em; color: #fff; background-color: #e67e22; display: inline-block; padding: 5px 15px; border-radius: 5px; margin-bottom: 15px; }
+        .food-image { width: 100%; height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; transition: transform 0.3s; }
+        .food-image:hover { transform: scale(1.02); }
+        .visual-impression p { font-style: italic; color: #555; background-color: #fff3e0; padding: 15px; border-left: 4px solid #e67e22; border-radius: 4px; }
+        .more-link { display: inline-block; margin-top: 10px; color: #d35400; font-weight: bold; text-decoration: none; border: 1px solid #d35400; padding: 5px 15px; border-radius: 20px; }
+        .more-link:hover { background-color: #d35400; color: #fff; }
     </style>
 </head>
 <body>
-
 <div class="container">
     <h1>高雄在地美食饗宴 Top 5</h1>
     <p style="text-align: center; color: #666;">精選 5 道最具代表性、結合了港都海味與南部熱情的特色料理。</p>
     <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
 
     <section class="food-item">
-        <h2 class="food-title">1. 虱目魚肚粥（湯）</h2>
-        <img src="001.png" alt="虱目魚肚粥" class="food-image">
-        <div class="content-block">
-            <h3 class="sub-heading">【料理視覺印象】</h3>
-            <div class="visual-impression">
-                <p>一碗熱氣騰騰的粥，湯色清澈略帶乳白。主角是一整片肥厚、煎得金黃焦香的虱目魚肚，魚皮油脂閃爍。粥裡米粒分明，撒上嫩薑絲與芹菜珠。</p>
-            </div>
-        </div>
-        <div class="content-block">
-            <h3 class="sub-heading">【文字介紹】</h3>
-            <p>高雄的虱目魚粥通常是「飯湯」形式，米粒保有口感。最精華的魚肚部位油脂豐富、肉質鮮甜，是高雄人一天的活力來源。</p>
-        </div>
+        <a href="food1.html" class="food-title"><h2>1. 虱目魚肚粥（湯）</h2></a>
+        <a href="food1.html"><img src="001.jpg" alt="虱目魚肚粥" class="food-image"></a>
+        <div class="visual-impression"><p>一碗熱氣騰騰的粥，主角是一整片肥厚、煎得金黃焦香的虱目魚肚。</p></div>
+        <p>高雄人的活力來源。特色在於「飯湯」形式，米粒保有口感。</p>
+        <a href="food1.html" class="more-link">查看歷史故事與做法 &rarr;</a>
     </section>
 
     <section class="food-item">
-        <h2 class="food-title">2. 鴨肉飯</h2>
-        <img src="002.png" alt="鴨肉飯" class="food-image">
-        <div class="content-block">
-            <h3 class="sub-heading">【料理視覺印象】</h3>
-            <div class="visual-impression">
-                <p>白飯鋪滿切片鴨肉，鴨肉帶皮呈現誘人的醬褐色。淋上油亮的鴨油醬汁，旁邊附上酸甜解膩的醃黃瓜。</p>
-            </div>
-        </div>
-        <div class="content-block">
-            <h3 class="sub-heading">【文字介紹】</h3>
-            <p>特色在於淋在飯上的獨門「鴨油醬汁」，香氣撲鼻。鴨肉處理得軟嫩多汁，鹹香中帶點南部特有的甘甜味。</p>
-        </div>
+        <a href="food2.html" class="food-title"><h2>2. 鴨肉飯</h2></a>
+        <a href="food2.html"><img src="002.jpg" alt="鴨肉飯" class="food-image"></a>
+        <div class="visual-impression"><p>白飯鋪滿切片鴨肉，淋上油亮的鴨油醬汁，香氣撲鼻。</p></div>
+        <p>處理得軟嫩多汁，鹹香中帶點南部特有的甘甜味。</p>
+        <a href="food2.html" class="more-link">查看歷史故事與做法 &rarr;</a>
     </section>
 
     <section class="food-item">
-        <h2 class="food-title">3. 岡山羊肉爐（帶皮羊肉）</h2>
-        <img src="003.png" alt="岡山羊肉爐" class="food-image">
-        <div class="content-block">
-            <h3 class="sub-heading">【料理視覺印象】</h3>
-            <div class="visual-impression">
-                <p>藥膳色澤的滾沸湯頭，滿滿的帶皮羊肉塊、凍豆腐與高麗菜。羊皮燉得透亮Q彈，搭配深色豆瓣醬。</p>
-            </div>
-        </div>
-        <div class="content-block">
-            <h3 class="sub-heading">【文字介紹】</h3>
-            <p>選用肉質結實的土羊，特色是「帶皮烹煮」，Q彈充滿膠質且無腥羶味，蘸著特製豆瓣醬，冬日最暖心。</p>
-        </div>
+        <a href="food3.html" class="food-title"><h2>3. 岡山羊肉爐（帶皮羊肉）</h2></a>
+        <a href="food3.html"><img src="003.jpg" alt="岡山羊肉爐" class="food-image"></a>
+        <div class="visual-impression"><p>藥膳色澤的滾沸湯頭，滿滿的帶皮羊肉塊，充滿膠質。</p></div>
+        <p>選用岡山土羊，肉質結實且無腥羶味，冬日最暖心。</p>
+        <a href="food3.html" class="more-link">查看歷史故事與做法 &rarr;</a>
     </section>
 
     <section class="food-item">
-        <h2 class="food-title">4. 炭烤黑輪片（手工黑輪）</h2>
-        <img src="004.png" alt="炭烤黑輪片" class="food-image">
-        <div class="content-block">
-            <h3 class="sub-heading">【料理視覺印象】</h3>
-            <div class="visual-impression">
-                <p>炭火上滋滋作響的厚實黑輪片，表面帶有焦黃烙痕。刷上厚厚醬汁，撒上花生粉與香菜點綴。</p>
-            </div>
-        </div>
-        <div class="content-block">
-            <h3 class="sub-heading">【文字介紹】</h3>
-            <p>外層酥脆焦香，內部保持Q軟。鹹甜烤肉醬加上花生粉的香氣，是高雄最具代表性的下午茶點心。</p>
-        </div>
+        <a href="food4.html" class="food-title"><h2>4. 炭烤黑輪片（手工黑輪）</h2></a>
+        <a href="food4.html"><img src="004.jpg" alt="炭烤黑輪片" class="food-image"></a>
+        <div class="visual-impression"><p>炭火上滋滋作響的厚實黑輪片，表面帶有焦黃烙痕。</p></div>
+        <p>外層酥脆焦香，內部保持Q軟。鹹甜烤肉醬加上花生粉的香氣。</p>
+        <a href="food4.html" class="more-link">查看歷史故事與做法 &rarr;</a>
     </section>
 
     <section class="food-item">
-        <h2 class="food-title">5. 高雄海產粥（澎湃飯湯）</h2>
-        <img src="005.png" alt="海產粥" class="food-image">
-        <div class="content-block">
-            <h3 class="sub-heading">【料理視覺印象】</h3>
-            <div class="visual-impression">
-                <p>澎湃的海鮮盛宴。碗中滿是鮮紅蝦子、飽滿蛤蜊與Q彈小卷，湯頭清澈見底，粒粒分明的米飯沉在碗底。</p>
-            </div>
-        </div>
-        <div class="content-block">
-            <h3 class="sub-heading">【文字介紹】</h3>
-            <p>港都的鮮度保證。以大量海鮮瞬間燙煮出的精華原味，料比飯多，喝的就是大海的鮮甜與豪邁。</p>
-        </div>
+        <a href="food5.html" class="food-title"><h2>5. 高雄海產粥（澎湃飯湯）</h2></a>
+        <a href="food5.html"><img src="005.jpg" alt="海產粥" class="food-image"></a>
+        <div class="visual-impression"><p>澎湃的海鮮盛宴。碗中滿是鮮紅蝦子、飽滿蛤蜊與Q彈小卷。</p></div>
+        <p>以大量海鮮瞬間燙煮出的精華原味，喝的就是大海的鮮甜。</p>
+        <a href="food5.html" class="more-link">查看歷史故事與做法 &rarr;</a>
     </section>
-
 </div>
-
 </body>
-
 </html>
